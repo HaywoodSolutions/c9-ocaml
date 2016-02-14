@@ -2,7 +2,7 @@
 # Install OCaml and OPAM inside a Cloud9 IDE workspace.
 # Run this script inside the workspace terminal, then eval $(opam config env)
 
-OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.00/ocaml-4.00.1.tar.gz
+OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.02/ocaml-4.02.3.tar.gz
 
 # create a scratch directory
 D=$(mktemp --tmpdir -d c9-ocaml-XXX)
