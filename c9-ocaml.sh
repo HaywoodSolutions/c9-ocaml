@@ -15,13 +15,13 @@ rm ocaml-*.tar.gz
 cd ocaml-*
 
 # build bytecode ocaml and camlp4 and install to $HOME
-./configure -no-graph -no-tk -no-curses -prefix $HOME
+./configure -no-graph -no-curses -prefix $HOME
 make world
 make install
 
 # build & install native-code ocaml (but not native-code camlp4, which doesn't
 # build inside the c9 workspace for unknown reasons, perhaps RAM limits?)
-./configure -no-camlp4 -no-graph -no-tk -no-curses -prefix $HOME
+./configure -no-camlp4 -no-graph -no-curses -prefix $HOME
 make world.opt
 make install
 
