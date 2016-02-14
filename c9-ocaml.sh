@@ -9,7 +9,7 @@ D=$(mktemp --tmpdir -d c9-ocaml-XXX)
 pushd $D
 
 # download & extract OCaml
-wget $OCAML_URL
+wget -c $OCAML_URL
 tar zxf ocaml-*tar.gz
 rm ocaml-*.tar.gz
 cd ocaml-*
@@ -26,7 +26,7 @@ make world.opt
 make install
 
 # download & install opam
-wget http://www.ocamlpro.com/pub/opam_installer.sh
+wget -c http://www.ocamlpro.com/pub/opam_installer.sh
 yes '' | sh ./opam_installer.sh $HOME/bin system
 
 # clean up
