@@ -1,7 +1,7 @@
 c9-ocaml
 ========
 
-This repo contains a script to install [OCaml](http://ocaml.org/) and [OPAM](http://opam.ocamlpro.com/) inside [Cloud9 IDE](https://c9.io/) workspaces, enabling collaborative editing, compiling, and testing of OCaml programs "in the cloud." Also installs ocamlfind and ocamlbuild.
+This repo contains a script to install [OCaml](http://ocaml.org/) and [OPAM](http://opam.ocamlpro.com/) inside [Cloud9 IDE](https://c9.io/) workspaces, enabling collaborative editing, compiling, and testing of OCaml programs "in the cloud." Built for [CO658](https://www.kent.ac.uk/courses/modules/module/CO658) Assessment involving pair programming.
 
 ## Starting up with [AWS Cloud9](https://aws.amazon.com/cloud9/)
 
