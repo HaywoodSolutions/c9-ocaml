@@ -23,7 +23,7 @@ Platform
 
 Proceed through the steps
 
-In any workspace, enter into the terminal pane:
+Open workspace, enter into the terminal pane:
 
 ````
 curl -L https://raw.github.com/HaywoodSolutions/c9-ocaml/master/c9-ocaml.sh | bash -ex
