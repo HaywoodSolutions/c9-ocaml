@@ -29,5 +29,3 @@ rm -rf $D
 
 opam update
 opam upgrade
-opam install ocamlfind
-opam install ocamlbuild

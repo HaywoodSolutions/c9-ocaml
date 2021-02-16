@@ -27,6 +27,8 @@ Open workspace, enter into the terminal pane:
 
 ````
 curl -L https://raw.github.com/HaywoodSolutions/c9-ocaml/master/c9-ocaml.sh | bash -ex
+opam install ocamlfind
+opam install ocamlbuild
 eval $(opam config env)
 git clone https://git.cs.kent.ac.uk/sao/example-compiler.git
 ````
