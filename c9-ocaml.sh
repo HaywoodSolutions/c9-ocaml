@@ -2,7 +2,7 @@
 # Install OCaml and OPAM inside a Cloud9 IDE workspace.
 # Run this script inside the workspace terminal, then eval $(opam config env)
 
-OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.02/ocaml-4.02.3.tar.gz
+OCAML_URL=http://caml.inria.fr/pub/distrib/ocaml-4.07/ocaml-4.07.0.tar.gz
 
 # create a scratch directory
 D=$(mktemp --tmpdir -d c9-ocaml-XXX)
@@ -19,16 +19,15 @@ cd ocaml-*
 make world
 make install
 
-# build & install native-code ocaml (but not native-code camlp4, which doesn't
-# build inside the c9 workspace for unknown reasons, perhaps RAM limits?)
-./configure -no-camlp4 -no-graph -no-curses -prefix $HOME
-make world.opt
-make install
-
 # download & install opam
-wget -c http://www.ocamlpro.com/pub/opam_installer.sh
+wget https://raw.githubusercontent.com/ocaml/opam/master/shell/opam_installer.sh
 yes '' | sh ./opam_installer.sh $HOME/bin system
 
 # clean up
 popd
 rm -rf $D
+
+opam update
+opam upgrade
+opam install ocamlfind
+opam install ocamlbuild
