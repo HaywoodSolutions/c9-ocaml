@@ -32,3 +32,5 @@ git clone https://git.cs.kent.ac.uk/sao/example-compiler.git
 ````
 
 The OCaml toolchain and OPAM will then be ready for use!
+
+Dont forget to delete you Cloud9 instance to avoid over billing!
